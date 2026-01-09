@@ -447,32 +447,24 @@
 }
 
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
   .right-links {
     display: none;
-    width: 100%;
     flex-direction: column;
+    width: 100%;
   }
 
   .right-links.active {
     display: flex;
   }
 
-  .dropdown-content,
-  .dropdown-sub,
-  .dropdown-kari {
-    display: none;
-    position: static;
-  }
-
-  .dropdown.open > .dropdown-content,
-  .dropdown.open > .dropdown-kari {
+  .menu-toggle {
     display: block;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
   }
 }
+
 
 
   </style>
@@ -514,7 +506,7 @@ document.addEventListener("click", () => {
     <div class="menu-toggle" id="menuToggle">☰</div>
 
 
-    <a class="btn-top" href="INDEX.HTML" data-key="about">About</a>
+    <a class="btn-top" href="index.html" data-key="about">About</a>
 
     <div class="dropdown">
       <a class="btn-top" data-key="school_profile">School Profile</a>
