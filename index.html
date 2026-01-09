@@ -439,33 +439,6 @@
     to   { opacity: 1; transform: scale(1); }
 }
 
-  .menu-toggle {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: white;
-}
-
-@media (max-width: 768px) {
-  .right-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .right-links.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-  }
-}
-
-
 
   </style>
 </head>
@@ -503,8 +476,6 @@ document.addEventListener("click", () => {
            <!-- HEADER -->
 <div class="top-nav">
   <div class="right-links">
-    <div class="menu-toggle" id="menuToggle">☰</div>
-
 
     <a class="btn-top" href="index.html" data-key="about">About</a>
 
@@ -771,7 +742,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setLanguage("en");
 });
 </script>
-<script src="respon.js"></script>
 
 
 </body>
